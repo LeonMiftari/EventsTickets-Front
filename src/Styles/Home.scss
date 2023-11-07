@@ -1,0 +1,261 @@
+@import 'Variable.scss';
+
+.CarouselSector {
+  
+ 
+  .carousel {
+    height: 400px;
+    
+  }
+
+  .carousel-inner {
+    height: 100%;
+     box-shadow: 0 0 10px rgba(4, 3, 3, 0.5); 
+  }
+
+  .carousel-item {
+    height: 100%;
+    
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    height:100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(3, 1, 1, 0.986) 100%);
+
+    
+   
+    
+  }
+     }
+   
+
+  .carousel-caption {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    color: $whiteColor;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: $whiteColor;
+      font-family: $titleFont;
+      font-size: 28px;
+
+      
+    }
+  }
+
+  .LatestProductsHeading {
+    h1 {
+      font-family: $titleFont;
+      font-size: 24px; 
+      color: $blackColor; 
+    }
+  }
+
+
+  .ProductSector {
+    
+    .container {
+      margin-bottom: 50px;
+      
+    }
+    .col-md-4{
+      padding: 1px;
+    }
+    .CardProductSection {
+    margin: 0px;
+  
+      .product-card {
+       border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        min-height: 300px;
+        margin-bottom: 20px;
+      
+  
+        .card-img {
+          object-fit: cover;
+          height: 300px;
+          width: auto;
+          box-shadow: 0 0 10px rgba(206, 204, 204, 0.5); 
+        }
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  
+  .FirstSection {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f7f7f7; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+  
+    .card-img, .card-img-top{
+      width: 100%;
+      height: 300px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    .row.CaptionSection {
+      .col-12 {
+        text-align: center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        .CustomTitle {
+          font-family: $titleFont;
+          font-size: 30px;
+          color: $blackColor;
+          text-align: center;
+        }
+  
+        .card {
+          border: none;
+          width: 100%;
+        }
+  
+        p {
+          font-family: $bodyFont;
+          font-size: 16px;
+          text-align: center;
+          margin-top: 20px;
+          color: $blackColor;
+        }
+      }
+    }
+  }
+  
+
+  .ServiceSector {
+    height: auto;
+    
+    .container {
+      margin-bottom: 50px;
+    }
+    .col-md-4{
+      padding: 1px;
+    }
+    .service-card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 300px;
+      margin: 0;
+      margin-bottom: 20px;
+  
+      .card-img {
+        object-fit: cover;
+        height: 200px;
+      }
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+  
+      .card-body {
+        padding: 1rem;
+  
+        .card-title {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: #333;
+        }
+  
+        .card-text {
+          font-size: 0.9rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  
+  
+
+
+.why-choose-us {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .content {
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+
+  .col-md-6 {
+    background-color: $fitColor;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    height: auto;
+
+    p {
+      color: $blackColor;
+      font-size: 20px;
+    }
+
+    button {
+      background-color: #ecf0f4;
+      color: $blackColor;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    
+      &:hover {
+        background-color: #5c5d5e;
+      }
+    }
+    
+  }
+}

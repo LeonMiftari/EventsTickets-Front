@@ -1,0 +1,24 @@
+@import 'Variable.scss';
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.NavLinks .nav-link {
+    font-family: $titleFont;
+    color: $blackColor;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: $whiteColor;
+}

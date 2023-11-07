@@ -1,0 +1,116 @@
+// Footer.scss
+@import 'Variable.scss';
+
+.footer {
+  background-color: $fitColor;
+  color: $blackColor;
+  font-family: 'Arial', sans-serif;
+  position:bottom;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  .container {
+    .row {
+      .footer-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        h4 {
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 10px;
+
+            a {
+              color: $blackColor;
+              text-decoration: none;
+              position: relative;
+              transition: color 0.3s;
+
+              &:hover {
+                color: $grayColor;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -3px;
+                  left: 0;
+                  width: 100%;
+                  height: 2px;
+                  background-color: $blueColor;
+                  animation: underlineEffect 0.3s;
+                }
+              }
+            }
+          }
+        }
+
+        .social-links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            border-radius: 50%;
+            background-color: $whiteColor;
+            color: $blackColor;
+            transition: transform 0.3s, background-color 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+              background-color: $whiteColor;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      .row {
+        .footer-col {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes underlineEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

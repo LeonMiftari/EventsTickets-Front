@@ -10,38 +10,38 @@ import { Container, Row ,Col} from 'react-bootstrap';
 function Home() {
   const carouselData = [
     {
-      description: "Explore new Things",
-      image: "/images/Products12.jpg",
+      description: "Book your Ticket's",
+      image: "/images/oskar.jpg",
     },
     {
       description: "Discover New Horizons",
-      image: "/images/Product11.jpg",
+      image: "/images/ticket.jpg",
     },
    
   ];
 
   
   const productData = [
-    { image: '/images/iphone15.jpg' },
-    { image: '/images/applewatch.jpg' },
-    { image: '/images/mac.jpg' },
+    { image: '/images/oskar1.jpg' },
+    { image: '/images/drakeconcert.jpg' },
+    { image: '/images/ballondoor.jpg' },
   ];
 
   const serviceData = [
     {
-      image: '/images/img3.jpg',
-      title: 'Mac Service',
-      description: 'Description:',
+      image: '/images/scan.jpg',
+      title: 'Tickets',
+      description: ' Scanner App Tickets',
     },
     {
-      image: '/images/Ipohone15-1.jpg',
-      title: 'Iphone Service',
-      description: 'Description:',
+      image: '/images/Vip.jpg',
+      title: 'Tickets',
+      description: 'Vip Tickets',
     },
     {
-      image: '/images/img5.jpg',
-      title: 'Apple Watch Service',
-      description: 'Description :',
+      image: '/images/virtual.jpg',
+      title: 'Tickets',
+      description: 'Virtual Tickets',
     },
   ];
 
@@ -101,16 +101,17 @@ function Home() {
         <Container fluid>
           <Row className="CaptionSection">
             <Col xs={12} md={6}>
-              <h2 className="CustomTitle">Leo Tech</h2>
+              <h2 className="CustomTitle">Welcome to LeoTickets: Elevating Your Event Experience!
+
+</h2>
               <p>
-                I was inspired to start my business with Apple products because of their commitment to innovation, design, and quality. Their products have a dedicated user base, and I wanted to offer top-tier technology and a seamless user experience to my customers. Apple's ethos of pushing boundaries resonated with me, and I wanted to be part of that journey.
-              </p>
+At LeoTickets, we are your dedicated ticketing platform, committed to bringing you closer to the most captivating events that promise unforgettable moments. Whether you're a music aficionado, sports enthusiast, or cultural explorer, LeoTickets is your gateway to a world of unparalleled experiences.              </p>
             </Col>
             <Col xs={12} md={6}>
               <Card>
               <Card.Img
             variant="top"
-            src="/images/Service.png"
+            src="/images/tick.png"
             style={{ backgroundColor: '#f7f7f7' }} 
           />
         </Card>
@@ -151,14 +152,14 @@ function Home() {
         <div className="content">
           <h2>WHY CHOOSE US</h2>
           <p>
-            We have highly skilled engineers with excellent technical knowledge and experience in using the latest software standards. By putting our clients at the heart of what we do, we are proud to still be supporting our first business client.
+          LeoTickets is your gateway to a carefully curated selection of top-tier events. We handpick each experience to guarantee that every moment you spend with us is extraordinary.
           </p>
         </div>
       </Col>
     </Row>
     <Row>
       <Col xs={12} md={12} className="col-md-6 bottom-content mt-5">
-        <p>Want any assistance, please write us</p>
+        <p>Want any assistance, please write us!</p>
         <button>Contact Us</button>
       </Col>
     </Row>

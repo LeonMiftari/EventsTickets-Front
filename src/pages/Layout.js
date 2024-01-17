@@ -50,7 +50,7 @@ const Layout = () => {
                     </Row>
                     <Row>
                         <Col className="footer-bottom text-center">
-                            <p>© 2023 Leo Tech. All rights reserved.</p>
+                            <p>© 2023 LeoTickets. All rights reserved.</p>
                         </Col>
                     </Row>
                 </Container>

@@ -4,7 +4,7 @@
   
  
   .carousel {
-    height: 400px;
+    height: 500px;
     
   }
 
@@ -20,7 +20,7 @@
 
   img {
     object-fit: cover;
-    object-position: center;
+    object-position:center;
     height:100%;
     background: linear-gradient(to bottom, transparent 0%, rgba(3, 1, 1, 0.986) 100%);
 
@@ -33,7 +33,7 @@
 
   .carousel-caption {
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 0;
     right: 0;
     text-align: center;
@@ -45,7 +45,7 @@
       padding: 0;
       color: $whiteColor;
       font-family: $titleFont;
-      font-size: 28px;
+      font-size: 32px;
 
       
     }
@@ -169,7 +169,8 @@
   
       .card-img {
         object-fit: cover;
-        height: 200px;
+        object-position: top;
+        height: 260px;
       }
   
       &:hover {

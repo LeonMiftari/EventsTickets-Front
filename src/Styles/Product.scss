@@ -1,0 +1,59 @@
+@import 'Variable.scss';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+
+.CarouselSector {
+  
+ 
+  .carousel {
+    height: 500px;
+    
+  }
+
+  .carousel-inner {
+    height: 100%;
+     box-shadow: 0 0 10px rgba(4, 3, 3, 0.5); 
+  }
+
+  .carousel-item {
+    height: 100%;
+    
+  }
+
+  img {
+    object-fit: cover;
+    object-position:center;
+    height:100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(3, 1, 1, 0.986) 100%);
+
+    
+   
+    
+  }
+     }
+   
+
+  .carousel-caption {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    color: $whiteColor;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: $whiteColor;
+      font-family: $titleFont;
+      font-size: 32px;
+
+      
+    }
+  }
+  @media (max-width: 767px) {
+    .swiper-container {
+      height: 300px; // Adjust the height for mobile devices
+    }
+  }
+  

@@ -12,13 +12,15 @@ const Layout = () => {
         <>
         <Navbar expand="lg" bg="dark" variant="dark"> 
           <Container>
-            <Navbar.Brand className="logo" href="/">Leo Tech</Navbar.Brand>
+            <Navbar.Brand className="logo" href="/">EventEagleTickets</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler-icon" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="NavLinks">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/products">Products</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
+                <Nav.Link href="/events">Events</Nav.Link>
+                <Nav.Link href="/transactions">Transactions</Nav.Link>
+
+
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -33,6 +35,11 @@ const Layout = () => {
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/products">Products</a></li>
                                 <li><a href="/contact">Contact</a></li>
+                                <li><a href="/event">Events</a></li>
+
+                                <li><a href="/transactions">Transactions</a></li>
+                                
+
                             </ul>
                         </Col>
                         <Col md={4} className="footer-col">

@@ -3,22 +3,38 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import { CardGroup } from 'react-bootstrap';
 import { Container, Row ,Col} from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+
+
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 
 function Home() {
-  const carouselData = [
+  const slideData = [
     {
-      description: "Book your Ticket's",
-      image: "/images/oskar.jpg",
+      image: "/images/drakeconcert.jpg",
     },
     {
-      description: "Discover New Horizons",
-      image: "/images/ticket.jpg",
+      image: "/images/adele.jpg",
+    },
+    {
+      image: "/images/ballon.jpg",
+    },
+    {
+      image: "/images/bella.jpg",
+    },
+    {
+      image: "/images/kev.jpg",
     },
    
   ];
+  
 
   
   const productData = [
@@ -47,18 +63,38 @@ function Home() {
 
   return (
     <div>
-    <div className="CarouselSector">
-      <Carousel>
-        {carouselData.map((c) => (
-          <Carousel.Item >
-            <img src={c.image} alt="Slide" className="d-block w-100 " />
-            <Carousel.Caption>
-              <h1>{c.description}</h1>
-            </Carousel.Caption>
-          </Carousel.Item>
+      <>
+    <div className="swiper-container mt-5">
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'3'}
+        initialSlide={2} 
+
+        coverflowEffect={{
+          rotate: 20,
+          stretch: 0,
+          depth: 350,
+          modifier: 2,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+            {slideData.map((s, index) => (
+          <SwiperSlide key={index}>
+            <img src={s.image} alt={`slide_image_${index + 1}`} />
+          </SwiperSlide>
         ))}
-      </Carousel>
+      </Swiper>
       </div>
+    </>
+  
+
+      
+  
 
 
 

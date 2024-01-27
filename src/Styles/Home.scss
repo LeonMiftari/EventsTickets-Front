@@ -1,66 +1,18 @@
 @import 'Variable.scss';
 
-.CarouselSector {
-  
- 
-  .carousel {
-    height: 500px;
-    
-  }
-
-  .carousel-inner {
-    height: 100%;
-     box-shadow: 0 0 10px rgba(4, 3, 3, 0.5); 
-  }
-
-  .carousel-item {
-    height: 100%;
-    
-  }
-
-  img {
-    object-fit: cover;
-    object-position:center;
-    height:100%;
-    background: linear-gradient(to bottom, transparent 0%, rgba(3, 1, 1, 0.986) 100%);
-
-    
-   
-    
-  }
-     }
-   
-
-  .carousel-caption {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 20px;
-    color: $whiteColor;
-
-    h1 {
-      margin: 0;
-      padding: 0;
-      color: $whiteColor;
-      font-family: $titleFont;
-      font-size: 32px;
-
-      
-    }
-  }
 
   .LatestProductsHeading {
     h1 {
-      font-family: $titleFont;
-      font-size: 24px; 
+      font-family: $bodyFont;
+      font-size: 22px; 
       color: $blackColor; 
+      margin-bottom: 80px;
+
     }
   }
 
 
-  .ProductSector {
+  .ProductSector { 
     
     .container {
       margin-bottom: 50px;
@@ -260,3 +212,36 @@
     
   }
 }
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  display: flex; 
+  align-items: center;
+  -webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#0006);
+
+
+  .swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+
+    img {
+      display: block;
+      width: 100%;
+      margin: auto; 
+    }
+  }
+
